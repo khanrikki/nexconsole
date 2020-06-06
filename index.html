@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nexconsole</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        />
+        <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+    <body>
+        <!-------------------------------------------Header Part Start--------------------------------->
+        <nav class="navbar navbar-expand-lg  fixed-top">
+            <div class="container text-uppercase p-2">
+                <a class="navbar-brand text-white font-weight-bold" href="#"
+                    >Nexconsole</a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav ml-auto text-uppercase">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"
+                                >Home
+                                <span class="sr-only">(current)</span></a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header" id="top-header">
+           
+            <section class="header-section">
+                <div class="center-div">
+                    <h1 class="font-weight-bold" id="header-text"></h1>
+                    <p>We Create The World Best Software</p>
+                    <div class="header-button">
+                        <a href="#">About Us</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script>
+            var x = 0;
+            var texteffect = "We Are The Software Developer";
+            var container = document.getElementById("header-text");
+
+            function animate() {
+                if (x < texteffect.length) {
+                    container.innerHTML += texteffect.charAt(x);
+                    x++;
+                    setTimeout(animate, 80);
+                }
+            }
+            animate();
+        </script>
+
+        <!----------------------------------------------Header Part End--------------------------------------------->
+
+        <!-- ---------------------------------------------About Us-------------------------------------------------- -->
+
+        <h2 class="text-center page-heading">About Us</h2>
+
+        <section class="section-padding about-section">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-12 col-md-6 col-lg-8 mt-4">
+                        <div class="section-title">
+                            <h2
+                                class="section-maintitle"
+                                style="line-height:1.27;"
+                            >
+                                WE ARE <strong>CREATIVE</strong>
+                            </h2>
+                        </div>
+
+                        <div class="about-item">
+                            <p>
+                                The expert team at Nexconsole is specialized in
+                                building simplified solutions for businesses.
+                                Our products and services unleash new levels of
+                                productivity, enhance collaboration amongst team
+                                members, and streamline large-scale
+                                communication. We utilize a powerful mix of
+                                simplified design and innovative technology to
+                                resolve the issues that hold back many
+                                Businesses today. Simply tell us your problem,
+                                and we’re always there to solve it
+                            </p>
+                            <p>
+                                Our software house offers a full range of
+                                customized software application development
+                                services all over the world that are bound to
+                                outperform your competition in the market by a
+                                mile.
+                            </p>
+                            <div class="hgt-20"></div>
+                            <div class="about-button">
+                                <br />
+                                <a href="#" class="btn btn-primary"
+                                    >Read More</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 text-center mt-4">
+                        <div class="about-box">
+                            <img src="./Images/img-4.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------------------------ About us End------------------------------------------------ -->
+
+
+        <!------------------------------------------------Our Service-------------------------------------------------------------->
+        <h2 class="text-center page-heading mt-5">Our Service</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="service-box">
+                        <div class="service-b-top">
+                            <div class="service-b-icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <div class="service-b-title">
+                                <h3>Web Development</h3>
+                            </div>
+                        </div>
+                        <div class="service-b-text">
+                            <p>
+                                We are offer high performance,scaleable and most
+                                elgant development services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="service-box">
+                        <div class="service-b-top">
+                            <div class="service-b-icon">
+                                <i class="fa fa-mobile"></i>
+                            </div>
+                            <div class="service-b-title">
+                                <h3>App Development</h3>
+                            </div>
+                        </div>
+                        <div class="service-b-text">
+                            <p>
+                                Highly interactive application for mobile and
+                                desktop are developed by keeping the hardware
+                                compatibility in mind.Our work on android is
+                                most prominent.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="service-box">
+                        <div class="service-b-top">
+                            <div class="service-b-icon">
+                                <i class="fa fa-play-circle"></i>
+                            </div>
+                            <div class="service-b-title">
+                                <h3>Video Animation</h3>
+                            </div>
+                        </div>
+                        <div class="service-b-text">
+                            <p>
+                                Whether it is promotional advertisement or logo
+                                reveal animation, Our designers work on video
+                                editing the best. We entertain any type of video
+                                editing including vector animation or raw camera
+                                video.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              
+
+                <div class="col-lg-4 col-md-4 col-12 mt-5">
+                    <div class="service-box">
+                        <div class="service-b-top">
+                            <div class="service-b-icon">
+                                <i class="fa fa-paint-brush"></i>
+                            </div>
+                            <div class="service-b-title">
+                                <h3>Graphic Designing</h3>
+                            </div>
+                        </div>
+                        <div class="service-b-text">
+                            <p>
+                                From posters to logo we got you all covered.Our
+                                graphic design service include illustrations,icons,
+                                posters,visiting cards and banners.We also offer 
+                                prototyping,mockup desgning services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12 mt-5">
+                    <div class="service-box">
+                        <div class="service-b-top">
+                            <div class="service-b-icon">
+                                <i class="fa fa-gears"></i>
+                            </div>
+                            <div class="service-b-title">
+                                <h3>Digital Marketing</h3>
+                            </div>
+                        </div>
+                        <div class="service-b-text">
+                            <p>
+                                Our team of marketers have extensive experience
+                                in reating highly target and precisely measured
+                                promotional compaigns,we also offer search engine
+                                optimization service for different businesses online.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12 mt-5">
+                    <div class="service-box">
+                        <div class="service-b-top">
+                            <div class="service-b-icon">
+                                <i class="fa fa-pencil-square-o"></i>
+                            </div>
+                            <div class="service-b-title">
+                                <h3>Content Writting</h3>
+                            </div>
+                        </div>
+                        <div class="service-b-text">
+                            <p>
+                                Our team of marketers have extensive experience
+                                in reating highly target and precisely measured
+                                promotional compaigns,we also offer search engine
+                                optimization service for different businesses online.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+        <!----------------------------------------------------------Service End----------------------------------------->
+
+        <!-------------------------------------------------------------Our Team-------------------------------------------->
+        <br>
+        <br>
+        <h2 class="text-center page-heading mt-5">Our Team</h2>
+        <h4 class="text-center team-subtitle">
+            <strong class="right-one">"</strong>Nexconsole Team welcome
+            You<strong class="left-one">"</strong>
+        </h4>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12 pb-4">
+                    <div class="profile-box">
+                        <h4>Aman Khan Rikki</h4>
+                        <small style="font-size:12px;">Position</small>
+                        <div class="img-team">
+                            <img src="./Images/aman2.png" />
+                        </div>
+                        <div class="social-box">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-linkedin"></i>
+                            <i class="fa fa-whatsapp"></i>
+                        </div>
+                        <p style="font-size:12px;">
+                            Nexconsole member And a web Analyst and the foundr
+                            of Nexconsole
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12 pb-4">
+                    <div class="profile-box">
+                        <h4>Hamza c Ali Baig</h4>
+                        <small style="font-size:12px;">Position</small>
+                        <div class="img-team">
+                            <img src="./Images/aman2.png" />
+                        </div>
+                        <div class="social-box">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-linkedin"></i>
+                            <i class="fa fa-whatsapp"></i>
+                        </div>
+                        <p style="font-size:12px;">
+                            Nexconsole member And a web Analyst and the foundr
+                            of Nexconsole
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12 pb-4">
+                    <div class="profile-box">
+                        <h4>Huzaifa Khan</h4>
+                        <small style="font-size:12px;">Position</small>
+                        <div class="img-team">
+                            <img src="./Images/aman2.png" />
+                        </div>
+                        <div class="social-box">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-linkedin"></i>
+                            <i class="fa fa-whatsapp"></i>
+                        </div>
+                        <p style="font-size:12px;">
+                            Nexconsole member And a web Analyst and the foundr
+                            of Nexconsole
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12 pb-4">
+                    <div class="profile-box">
+                        <h4>Arshman Naeem</h4>
+                        <small style="font-size:12px;">Position</small>
+                        <div class="img-team">
+                            <img src="./Images/aman2.png" />
+                        </div>
+                        <div class="social-box">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-linkedin"></i>
+                            <i class="fa fa-whatsapp"></i>
+                        </div>
+                        <p style="font-size:12px;">
+                            Nexconsole member And a web Analyst and the foundr
+                            of Nexconsole
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12 pb-4">
+                    <div class="profile-box">
+                        <h4>M Jawwad</h4>
+                        <small style="font-size:12px;">Position</small>
+                        <div class="img-team">
+                            <img src="./Images/aman2.png" />
+                        </div>
+                        <div class="social-box">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-linkedin"></i>
+                            <i class="fa fa-whatsapp"></i>
+                        </div>
+                        <p style="font-size:12px;">
+                            Nexconsole member And a web Analyst and the foundr
+                            of Nexconsole
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12 pb-4">
+                    <div class="profile-box">
+                        <h4>Usama Sohail</h4>
+                        <small style="font-size:12px;">Position</small>
+                        <div class="img-team">
+                            <img src="./Images/aman2.png" />
+                        </div>
+                        <div class="social-box">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-linkedin"></i>
+                            <i class="fa fa-whatsapp"></i>
+                        </div>
+                        <p style="font-size:12px;">
+                            Nexconsole member And a web Analyst and the foundr
+                            of Nexconsole
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------------------------------------Our Team End-------------------------------------------->
+
+
+        <!-- ------------------------------------------------------------Contact Us----------------------------------------- -->
+
+        <h2 class="text-center page-heading">Contact Us</h2>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter Your Name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    placeholder="Enter Your Number"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter Subject"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <textarea
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="Enter Message"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-6 contact-info ">
+                        <div class="follow">
+                            <b> Address:</b><i class="fa fa-map-marker"></i>ABC
+                            Road,Karachi,Pakistan
+                        </div>
+
+                        <div class="follow">
+                            <b> Email:</b
+                            ><i class="fa fa-envelope-o"></i
+                            >Nexconsole@gmail.com
+                        </div>
+
+                        <div class="follow">
+                            <b> Phone no:</b><i class="fa fa-phone"></i>ABC
+                            Road,Karachi,Pakistan
+                        </div>
+
+                        <div class="follow">
+                            <label><b> Get Social:</b></label>
+
+                            <a href="#"><i class="fa fa-facebook p-2"></i></a>
+                            <a href="#"><i class="fa fa-instagram p-2"></i></a>
+                            <a href="#"><i class="fa fa-linkedin p-2"></i></a>
+                            <a href="#"
+                                ><i class="fa fa-youtube-play p-2"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------------------------------------------------Contact Us end----------------------------------- -->
+
+        <!-- ------------------------------------------------------------Footer start------------------------------------------>
+
+        <footer class="footersection" id="footerfdiv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 footerdiv">
+                        <div class=" mt-5">
+                            <h3>About Nexconsole</h3>
+                    
+                            </div>
+                            
+                            
+                        </div>
+                        
+                        
+                    </div>
+
+                   
+
+                    
+                </div>
+                <div class="follow-footer">
+                    <label><b> Get Social:</b></label>
+
+                    <a href="#"><i class="fa fa-facebook p-2"></i></a>
+                    <a href="#"><i class="fa fa-instagram p-2"></i></a>
+                    <a href="#"><i class="fa fa-linkedin p-2"></i></a>
+                    <a href="#"
+                        ><i class="fa fa-youtube-play p-2"></i
+                    ></a>
+                </div>
+               
+            
+
+
+
+
+
+
+
+
+            <div class="scrolltop float-right">
+                <i
+                    class="fa fa-arrow-up mr-3"
+                    onclick="topfunction()"
+                    id="mybtn"
+                ></i>
+            </div>
+            <div class="mt-5  text-center">
+                <p>Copyright @2020 All Right Reserved | Nexconsole</p>
+            </div>
+
+            <script>
+                //get the button
+                mybutton = document.getElementById("mybtn");
+                // when the user scroll down 20px from the top of the document,show the button
+                window.onscroll = function() {
+                    scrollFunction();
+                };
+
+                function scrollFunction() {
+                    if (
+                        document.body.scrollTopv > 20 ||
+                        document.documentElement.scrollTop > 20
+                    ) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
+                //when the user clicks on the button , scroll to the topof the document
+                function topFunction() {
+                    document.body.scrollTop = 0; //for safari
+                    document.documentElement.scrollTop = 0; // for chrome , firefox
+                }
+            </script>
+        </footer>
+
+        <!-- ------------------------------------------------------------footer end----------------------------------------- -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
